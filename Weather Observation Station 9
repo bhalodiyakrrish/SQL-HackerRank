@@ -1,0 +1,25 @@
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u','A','E','I','O','U');
+
+Expected Output
+Baileyville 
+Bainbridge 
+Baker 
+Baldwin 
+Barrigada 
+Bass Harbor 
+Baton Rouge 
+Bayville 
+Beaufort 
+Beaver Island 
+Bellevue 
+Benedict 
+Bennington 
+Bentonville 
+Berryton 
+Bertha 
+Beverly 
+Biggsville 
+Bison 
+Blue River {-truncated-}
