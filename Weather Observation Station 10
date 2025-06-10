@@ -1,0 +1,25 @@
+SELECT DISTINCT CITY
+FROM STATION
+WHERE RIGHT(CITY,1) NOT IN ('a','e','i','o','u','A','E','I','O','U');
+
+Expected Output
+Addison 
+Agency 
+Alanson 
+Albany 
+Albion 
+Algonac 
+Allerton 
+Alton 
+Andover 
+Anthony 
+Arlington 
+Arrowsmith 
+Athens 
+Auburn 
+Baker 
+Baldwin 
+Bass Harbor 
+Beaufort 
+Beaver Island 
+Benedict {-truncated-}
