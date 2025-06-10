@@ -1,0 +1,25 @@
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LEFT(CITY, 1) IN ('a','e','i','o','u','A','E','I','O','U');
+
+Expected Output
+Acme 
+Addison 
+Agency 
+Aguanga 
+Alanson 
+Alba 
+Albany 
+Albion 
+Algonac 
+Aliso Viejo 
+Allerton 
+Alpine 
+Alton 
+Amazonia 
+Amo 
+Andersonville 
+Andover 
+Anthony 
+Archie 
+Arispe {-truncated-}
