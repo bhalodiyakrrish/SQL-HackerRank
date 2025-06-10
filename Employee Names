@@ -1,0 +1,25 @@
+SELECT name
+FROM Employee
+ORDER BY name ASC;
+
+Expected Output
+Alan 
+Amy 
+Andrew 
+Andrew 
+Angela 
+Ann 
+Anna 
+Anthony 
+Antonio 
+Benjamin 
+Bonnie 
+Brandon 
+Brandon 
+Brian 
+Carol 
+Charles 
+Christina 
+Christina 
+Christine 
+Christine {-truncated-}
