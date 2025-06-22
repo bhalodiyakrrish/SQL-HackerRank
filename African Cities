@@ -1,0 +1,18 @@
+SELECT
+    CITY.NAME
+FROM CITY
+LEFT JOIN COUNTRY
+ON COUNTRYCODE = CODE
+WHERE CONTINENT = 'Africa';
+
+Input (stdin)
+ 
+Expected Output
+Qina 
+Warraq al-Arab 
+Kempton Park 
+Alberton 
+Klerksdorp 
+Uitenhage 
+Brakpan 
+Libreville
