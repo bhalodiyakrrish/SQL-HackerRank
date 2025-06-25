@@ -1,0 +1,11 @@
+SELECT TOP 1
+    (months * salary) AS earnings,
+    COUNT(*) AS TotalCount
+FROM Employee
+GROUP BY (months * salary)
+ORDER BY (months * salary) DESC
+
+Input (stdin)
+INPUT
+Expected Output
+108064 7
