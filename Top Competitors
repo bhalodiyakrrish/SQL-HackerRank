@@ -1,0 +1,36 @@
+SELECT h.hacker_id, name
+FROM Hackers h
+INNER JOIN
+(SELECT s.hacker_id, COUNT(s.submission_id) AS c_id
+FROM Submissions s
+LEFT JOIN Challenges c
+ON s.challenge_id = c.challenge_id
+LEFT JOIN Difficulty d
+ON c.difficulty_level = d.difficulty_level AND s.score = d.score
+WHERE s.score = d.score
+GROUP BY s.hacker_id
+HAVING COUNT(s.submission_id) > 1) sub
+ON h.hacker_id = sub.hacker_id
+ORDER BY sub.c_id DESC, h.hacker_id ASC;
+
+Expected Output
+27232 Phillip 
+28614 Willie 
+15719 Christina 
+43892 Roy 
+14246 David 
+14372 Michelle 
+18330 Lawrence 
+26133 Jacqueline 
+26253 John 
+30128 Brandon 
+35583 Norma 
+13944 Victor 
+17295 Elizabeth 
+19076 Matthew 
+26895 Evelyn 
+32172 Jonathan 
+41293 Robin 
+45386 Christina 
+45785 Jesse 
+49652 Christine
